@@ -41,3 +41,9 @@ sudo apt-get install handbrake -y
 sudo apt-get install virtualbox -y
 sudo apt-get install virtualbox-guest-additions-iso -y
 sudo apt-get install falkon -y
+
+wget -L https://raw.githubusercontent.com/jaxtechnologies/mint-setup/main/2.json
+
+mv 2.json .cinnamon/configs/grouped-window-list@cinnamon.org/
+
+sudo reboot
