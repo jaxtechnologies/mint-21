@@ -42,6 +42,7 @@ sudo apt-get install virtualbox -y
 sudo apt-get install virtualbox-guest-additions-iso -y
 sudo apt-get install falkon -y
 
-mv 2.json .cinnamon/configs/grouped-window-list@cinnamon.org/
+cd ~/Downloads/mint-setup/
+mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
 
 sudo reboot
