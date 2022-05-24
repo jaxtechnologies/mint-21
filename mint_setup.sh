@@ -45,4 +45,10 @@ sudo apt-get install falkon -y
 cd ~/Downloads/mint-setup/
 mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
 
+clear
+echo ""
+echo "Setup Complete - Machine will reboot in 30 seconds"
+sleep 30
+
+
 sudo reboot
