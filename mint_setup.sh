@@ -41,6 +41,15 @@ sudo apt-get install handbrake -y
 sudo apt-get install virtualbox -y
 sudo apt-get install virtualbox-guest-additions-iso -y
 sudo apt-get install falkon -y
+sudo apt-get install openoffice.org-hyphenation -y
+
+clear
+echo ""
+echo Setting up Timeshift and running first snapshot...  Please be patient...
+echo ""
+echo ""
+sudo timeshift --create --rsync --tags W --yes
+sudo sed -i 's/"schedule_weekly" : "false"/"schedule_weekly" : "true"/g' /etc/timeshift/timeshift.json
 
 cd ~/Downloads/mint-setup/
 mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
