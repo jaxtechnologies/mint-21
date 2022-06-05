@@ -301,7 +301,7 @@ echo ""
 echo Setting up Timeshift and taking first snapshot...  Please be patient...
 echo ""
 echo ""
-sudo timeshift --create --rsync --tags 0 --comment "Base Install Snapshot" --yes
+sudo timeshift --create --rsync --comment "Base Install Snapshot" --yes
 sudo sed -i 's/"schedule_weekly" : "false"/"schedule_weekly" : "true"/g' /etc/timeshift/timeshift.json
 
 cd ~/Downloads/mint-setup/
