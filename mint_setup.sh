@@ -313,12 +313,33 @@ sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=0/g' /etc/default/grub
 sudo update-grub
 
 clear
-echo ""
-echo Setting up Timeshift and taking first snapshot...  Please be patient...
-echo ""
-echo ""
-sudo timeshift --create --rsync --comment "Base Install Snapshot" --yes
-sudo sed -i 's/"schedule_weekly" : "false"/"schedule_weekly" : "true"/g' /etc/timeshift/timeshift.json
+read -p "Is this a Dell Latitude E6530 that requires NVidia 340 Drivers... (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+	echo ""
+	echo "Installing NVidia-340 Drivers...  Please be patient..."
+  echo ""
+  echo ""
+  sudo apt-get install nvidia-340 -y
+
+else
+	cancel
+fi
+
+clear
+read -p "Does this machine have plenty of drive space for timeshift setup...  Say NO for Virtual Machine setup... (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+  echo ""
+  echo Setting up Timeshift and taking first snapshot...  Please be patient...
+  echo ""
+  echo ""
+  sudo timeshift --create --rsync --comment "Base Install Snapshot" --yes
+  sudo sed -i 's/"schedule_weekly" : "false"/"schedule_weekly" : "true"/g' /etc/timeshift/timeshift.json
+
+else
+	cancel
+fi
 
 cd ~/Downloads/mint-setup/
 mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
