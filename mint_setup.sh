@@ -295,6 +295,13 @@ echo ""
 #Fixes the Local Language Packs message after Initial Installation
 sudo apt-get install openoffice.org-hyphenation -y
 
+clear
+echo ""
+echo Modifying Grub Menu to not display...  Please be patient...
+echo ""
+echo ""
+sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=0/g' /etc/default/grub
+sudo update-grub
 
 clear
 echo ""
