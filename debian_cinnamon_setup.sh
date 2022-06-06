@@ -257,6 +257,20 @@ sudo sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
 sudo update-grub
 
 clear
+read -p "Is this a Dell Latitude E6530 that requires NVidia 340 Drivers... (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+	echo ""
+	echo "Installing NVidia-340 Drivers...  Please be patient..."
+  echo ""
+  echo ""
+  sudo apt-get install nvidia-340 -y
+
+else
+	cancel
+fi
+
+clear
 echo ""
 echo "Setup Complete - Machine will reboot in 30 seconds"
 sleep 30
