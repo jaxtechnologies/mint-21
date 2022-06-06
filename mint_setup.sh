@@ -313,6 +313,7 @@ sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=0/g' /etc/default/grub
 sudo update-grub
 
 clear
+echo ""
 read -p "Is this a Dell Latitude E6530 that requires NVidia 340 Drivers... (y/n)? "
 if [ "$REPLY" = "y" ]; then
 	
@@ -327,6 +328,7 @@ else
 fi
 
 clear
+echo ""
 read -p "Does this machine have plenty of drive space for timeshift setup...  Say NO for Virtual Machine setup... (y/n)? "
 if [ "$REPLY" = "y" ]; then
 	
