@@ -333,6 +333,7 @@ fi
 
 cd ~/Downloads/mint-e6530/
 mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
+mv linuxmint.png ~/Pictures/
 mv .conkyrc ~
 
 sudo mv sun-hours_etc_cron.daily /etc/cron.daily/sun-hours
@@ -345,6 +346,8 @@ sudo chmod 755 /usr/local/bin/sun-hours
 
 sudo /usr/local/bin/sun-hours
 sudo /etc/init.d/cron restart
+
+gsettings set org.cinnamon.desktop.background picture-uri 'file:///usr/share/backgrounds/linuxmint/ktee_linuxmint.png'
 
 clear
 echo ""
