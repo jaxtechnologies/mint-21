@@ -331,16 +331,18 @@ else
 	cancel
 fi
 
-cd ~/Downloads/linux-setup/
+cd ~/Downloads/mint-e6530/
 mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
-chmod 700 conky_select.sh
-mv conky_select.sh ~
+mv .conkyrc ~
+
 sudo mv sun-hours_etc_cron.daily /etc/cron.daily/sun-hours
-sudo mv sun-hours_usr_local_bin /usr/local/bin/sun-hours
 sudo chown root.root /etc/cron.daily/sun-hours
 sudo chmod 755 /etc/cron.daily/sun-hours
+
+sudo mv sun-hours_usr_local_bin /usr/local/bin/sun-hours
 sudo chown root.root /usr/local/bin/sun-hours
 sudo chmod 755 /usr/local/bin/sun-hours
+
 sudo /usr/local/bin/sun-hours
 sudo /etc/init.d/cron restart
 
