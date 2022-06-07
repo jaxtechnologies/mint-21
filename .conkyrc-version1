@@ -1,0 +1,133 @@
+-- STOP CONKY FROM FLICKERING  # double_buffer = true,
+
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 1,
+    cpu_avg_samples = 2,
+	default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    font = 'DejaVu Sans Mono:size=8',
+    gap_x = 7,
+    gap_y = 10,
+    minimum_height = 5,
+	minimum_width = 5,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false
+}
+
+conky.text = [[
+#TIME & DATE
+#${font Arial:bold:size=9}${color #ade674}$nodename ${hr 2}$font$color
+#${font Open Sans:size=18}$alignr${time %I:%M:%S %p}$font
+#${font Open Sans:size=9}$alignr${time %a}, ${time %b %d, %Y}$font
+
+#SYSTEM
+${font Arial:bold:size=9}${color #ade674}SYSTEM ${hr 2}$font$color
+Hostname: $alignr $nodename
+Time (24hr): $alignr ${time %H:%M:%S}
+Uptime: $alignr $uptime
+Kernel: $alignr $sysname $kernel $machine
+
+#MEMORY
+${font Arial:bold:size=9}${color #ade674}MEMORY ${hr 2}$font$color
+RAM: $alignc $mem  /  $memmax $alignr $memperc%
+$membar
+HD Swap: $alignc $swap  /  $swapmax $alignr $swapperc%
+$swapbar
+
+#NETWORK ADAPTER = wlp3s0
+${font Arial:bold:size=9}${color #ade674}NETWORK ${hr 2}$font$color
+IP on wlp3s0 $alignr ${addr wlp3s0}
+
+Up Total: $alignc ${totalup wlp3s0} $alignr ${upspeed wlp3s0} k/s
+${upspeedgraph wlp3s0 20,250 0000ff ff0000}
+
+Down Total: $alignc ${totaldown wlp3s0} $alignr ${downspeed wlp3s0} k/s
+${downspeedgraph wlp3s0 20,250 0000ff ff0000}
+
+#PROCESSORS
+${font Arial:bold:size=9}${color #ade674}PROCESSORS ${hr 2}$font$color
+Load Avg: $alignr $loadavg
+CPU Avg: $alignr ${cpu cpu0}%
+${cpubar cpu0}
+${cpugraph 20,250 0000ff ff0000}$color
+#Core 1: $alignc ${cpu cpu1}% $alignr Freq: ${freq 1}MHz
+#${cpubar cpu1}
+#Core 2: $alignc ${cpu cpu2}% $alignr Freq: ${freq 2}MHz
+#${cpubar cpu2}
+#Core 3: $alignc ${cpu cpu3}% $alignr Freq: ${freq 3}MHz
+#${cpubar cpu3}
+#Core 4: $alignc ${cpu cpu4}% $alignr Freq: ${freq 4}MHz
+#${cpubar cpu4}
+#Core 5: $alignc ${cpu cpu5}% $alignr Freq: ${freq 5}MHz
+#${cpubar cpu5}
+#Core 6: $alignc ${cpu cpu6}% $alignr Freq: ${freq 6}MHz
+#${cpubar cpu6}
+#Core 7: $alignc ${cpu cpu7}% $alignr Freq: ${freq 7}MHz
+#${cpubar cpu7}
+#Core 8: $alignc ${cpu cpu8}% $alignr Freq: ${freq 8}MHz
+#${cpubar cpu8}
+
+#PROCESSES - CONKY CAN GET 10 PROCESSES FROM TOP
+${font Arial:bold:size=9}${color #ade674}PROCESSES ${hr 2}
+${font Arial:bold:size=9}${color #ade674}Processes: $alignr Total: $processes    Running: $running_processes
+
+${font Arial:bold:size=9}${color #ade674}MEM Usage: $alignr   PID   CPU%  MEM%
+$font${color red} ${top_mem name 1}	$alignr ${top_mem pid 1}   ${top_mem cpu 1}   ${top_mem mem 1}
+$font${color orange} ${top_mem name 2}	$alignr ${top_mem pid 2}   ${top_mem cpu 2}   ${top_mem mem 2}
+$font${color yellow} ${top_mem name 3}	$alignr ${top_mem pid 3}   ${top_mem cpu 3}   ${top_mem mem 3}
+$font${color green} ${top_mem name 4}	$alignr ${top_mem pid 4}   ${top_mem cpu 4}   ${top_mem mem 4}
+
+${font Arial:bold:size=9}${color #ade674}CPU Usage: $alignr   PID   CPU%  MEM%
+$font${color red} ${top name 1}		$alignr ${top pid 1}   ${top cpu 1}   ${top mem 1}
+$font${color orange} ${top name 2}		$alignr ${top pid 2}   ${top cpu 2}   ${top mem 2}
+$font${color yellow} ${top name 3}	$alignr ${top pid 3}   ${top cpu 3}   ${top mem 3}
+$font${color green} ${top name 4}	$alignr ${top pid 4}   ${top cpu 4}   ${top mem 4}
+
+#HDD
+${font Arial:bold:size=9}${color #ade674}HDD ${hr 2}$font$color
+File Sys /: $alignc ${fs_used} / ${fs_size} $alignr ${fs_used_perc}%
+${fs_bar}
+Entropy: $alignc ${entropy_avail}  /  ${entropy_poolsize} $alignr ${entropy_perc}%
+${entropy_bar}
+Disk I/O Read: $alignr ${diskio_read sda1}
+${diskiograph_read 20,250 0000ff ff0000 750}
+Disk I/O Write: $alignr ${diskio_write sda1}
+${diskiograph_write 20,250 0000ff ff0000 750}
+
+#SENSORS
+${font Arial:bold:size=9}${color #ade674}SENSORS ${hr 2}$font$color
+MB-CPU-FAN: $alignr ${hwmon 2 fan 1} RPM
+MB-CPU: $alignr ${hwmon 2 temp 1} °C
+MB-Ambient: $alignr ${hwmon 2 temp 2} °C
+MB-SODIMM: $alignr ${hwmon 2 temp 3} °C
+MB-GPU: $alignr ${hwmon 2 temp 4} °C
+CPU Socket: $alignr ${hwmon 0 temp 1} °C
+GPU-Core °C: $alignr ${hwmon 1 temp 1} °C
+CPU-ID-0: $alignr${hwmon 3 temp 1} °C
+CPU-Core-0: $alignr${hwmon 3 temp 2} °C
+CPU-Core-1: $alignr${hwmon 3 temp 3} °C
+CPU-Core-2: $alignr${hwmon 3 temp 4} °C
+CPU-Core-3: $alignr${hwmon 3 temp 5} °C
+#${stippled_hr 4}
+]]
