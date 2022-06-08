@@ -70,7 +70,7 @@ ${color}${goto 13}Core 8 ${color2}@ ${goto 77}${color green}${freq 8}MHz ${goto 
 ${color1}CPU Avg: ${goto 77}${color green}${cpu cpu0}% ${goto 110}${color3}${cpubar cpu0 12}
 ${color3}${cpugraph cpu0 12,380 0000ff ff0000}
 ${color1}Load Avg: (1-5-15 minutes) ${alignr}${color green} $loadavg
-${color1}CPU Fan: ${color green}${hwmon 2 fan 1} RPM $alignr ${color1}CPU Temp: ${color green}${hwmon 2 temp 1} °C
+${color1}CPU Fan: ${color green}${hwmon 3 fan 1} RPM $alignr ${color1}CPU Temp: ${color green}${hwmon 3 temp 1} °C
 
 #PROCESSES
 ${color orange}${voffset 2}PROCESSES  ${hr 2}
