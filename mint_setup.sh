@@ -346,7 +346,9 @@ sudo chown root.root /usr/local/bin/sun-hours
 sudo chmod 755 /usr/local/bin/sun-hours
 
 sudo /usr/local/bin/sun-hours
-sudo /etc/init.d/cron restart
+
+#Testing to see if this step is needed since we are rebooting and if will fix sunrise-sunset issue not running...
+#sudo /etc/init.d/cron restart
 
 gsettings set org.cinnamon.desktop.background picture-uri 'file:///usr/share/backgrounds/linuxmint/ktee_linuxmint.png'
 
