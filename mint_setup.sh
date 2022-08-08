@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 #TOTAL APPS BEING ADDED TO INSTALLATION
-total=38
+total=37
 
 clear
 echo ""
@@ -188,21 +188,14 @@ sudo apt-get install kleopatra -y
 
 clear
 echo ""
-echo Installing 25/$total synergy...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install synergy -y
-
-clear
-echo ""
-echo Installing 26/$total mysql-workbench...  Please be patient...
+echo Installing 25/$total mysql-workbench...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install mysql-workbench -y
 
 clear
 echo ""
-echo Installing 27/$total steam...  Please be patient...
+echo Installing 26/$total steam...  Please be patient...
 echo ""
 echo ""
 #Steam Gaming
@@ -210,7 +203,7 @@ sudo apt-get install steam -y
 
 clear
 echo ""
-echo Installing 28/$total cmatrix...  Please be patient...
+echo Installing 27/$total cmatrix...  Please be patient...
 echo ""
 echo ""
 #cmatrix turns terminal into matrix terminal
@@ -218,7 +211,7 @@ sudo apt-get install cmatrix -y
 
 clear
 echo ""
-echo Installing 29/$total krita...  Please be patient...
+echo Installing 28/$total krita...  Please be patient...
 echo ""
 echo ""
 #Professional Paint Program
@@ -226,7 +219,7 @@ sudo apt-get install krita -y
 
 clear
 echo ""
-echo Installing 30/$total cheese...  Please be patient...
+echo Installing 29/$total cheese...  Please be patient...
 echo ""
 echo ""
 #Camera Software
@@ -234,7 +227,7 @@ sudo apt-get install cheese -y
 
 clear
 echo ""
-echo Installing 31/$total guvcview...  Please be patient...
+echo Installing 30/$total guvcview...  Please be patient...
 echo ""
 echo ""
 #Camera Software
@@ -242,42 +235,42 @@ sudo apt-get install guvcview -y
 
 clear
 echo ""
-echo Installing 32/$total gftp...  Please be patient...
+echo Installing 31/$total gftp...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install gftp -y
 
 clear
 echo ""
-echo Installing 33/$total handbrake...  Please be patient...
+echo Installing 32/$total handbrake...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install handbrake -y
 
 clear
 echo ""
-echo Installing 34/$total virtualbox...  Please be patient...
+echo Installing 33/$total virtualbox...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install virtualbox -y
 
 clear
 echo ""
-echo Installing 35/$total virtualbox-guest-additions-iso...  Please be patient...
+echo Installing 34/$total virtualbox-guest-additions-iso...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install virtualbox-guest-additions-iso -y
 
 clear
 echo ""
-echo Installing 36/$total falkon...  Please be patient...
+echo Installing 35/$total falkon...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install falkon -y
 
 clear
 echo ""
-echo Installing 37/$total openoffice.org-hyphenation...  Please be patient...
+echo Installing 36/$total openoffice.org-hyphenation...  Please be patient...
 echo ""
 echo ""
 #Fixes the Local Language Packs message after Initial Installation
@@ -285,7 +278,7 @@ sudo apt-get install openoffice.org-hyphenation -y
 
 clear
 echo ""
-echo Installing 38/$total xrdp...  Please be patient...
+echo Installing 37/$total xrdp...  Please be patient...
 echo ""
 echo ""
 #Allows RDP Connections to Linux
