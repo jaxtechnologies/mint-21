@@ -324,6 +324,31 @@ else
 	cancel
 fi
 
+clear
+echo ""
+read -p "Does this machine need Synergy setup to connect to Synergy Server...  Say NO for Virtual Machine setup... (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+  echo ""
+  echo ""
+  echo " Enter the Synergy Server Hostname"
+  echo ""
+  echo ""
+  read synergy_host
+  echo ""
+  echo ""
+  echo Setting up Synergy...  Please be patient...
+  echo ""
+  echo ""
+  sudo gdebi ~/Downloads/mint-setup/synergy_1.14.5-stable.a975f61a_ubuntu20_amd64.deb
+  echo "greeter-setup-script=/usr/bin/synergyc $synergy_host" | sudo tee -a /etc/lightdm/lightdm.conf.d/70-linuxmint.conf
+  echo ""
+  echo ""
+  
+else
+	cancel
+fi
+
 cd ~/Downloads/mint-e6530/
 mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
 mv linuxmint.png ~/Pictures/
