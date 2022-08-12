@@ -310,22 +310,6 @@ fi
 
 clear
 echo ""
-read -p "Does this machine have plenty of drive space for timeshift setup...  Say NO for Virtual Machine setup... (y/n)? "
-if [ "$REPLY" = "y" ]; then
-	
-  echo ""
-  echo Setting up Timeshift and taking first snapshot...  Please be patient...
-  echo ""
-  echo ""
-  sudo timeshift --create --rsync --comment "Base Install Snapshot" --yes
-  sudo sed -i 's/"schedule_weekly" : "false"/"schedule_weekly" : "true"/g' /etc/timeshift/timeshift.json
-
-else
-	cancel
-fi
-
-clear
-echo ""
 read -p "Does this machine need Synergy setup to connect to Synergy Server...  Say NO for Virtual Machine setup... (y/n)? "
 if [ "$REPLY" = "y" ]; then
 	
@@ -349,7 +333,7 @@ else
 	cancel
 fi
 
-cd ~/Downloads/mint-e6530/
+cd ~/Downloads/mint-setup/
 mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
 mv linuxmint.png ~/Pictures/
 mv .conkyrc ~
@@ -372,8 +356,23 @@ gsettings set org.cinnamon.desktop.background picture-uri 'file:///usr/share/bac
 
 clear
 echo ""
+read -p "Does this machine have plenty of drive space for timeshift setup...  Say NO for Virtual Machine setup... (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+  echo ""
+  echo Setting up Timeshift and taking first snapshot...  Please be patient...
+  echo ""
+  echo ""
+  sudo timeshift --create --rsync --comment "Base Install Snapshot" --yes
+  sudo sed -i 's/"schedule_weekly" : "false"/"schedule_weekly" : "true"/g' /etc/timeshift/timeshift.json
+
+else
+	cancel
+fi
+
+clear
+echo ""
 echo "Setup Complete - Machine will reboot in 30 seconds"
 sleep 30
-
 
 sudo reboot
