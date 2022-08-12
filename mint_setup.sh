@@ -341,7 +341,7 @@ if [ "$REPLY" = "y" ]; then
   echo ""
   echo ""
   sudo gdebi ~/Downloads/mint-setup/synergy_1.14.5-stable.a975f61a_ubuntu20_amd64.deb
-  echo "greeter-setup-script=/usr/bin/synergyc $synergy_host" | sudo tee -a /etc/lightdm/lightdm.conf.d/70-linuxmint.conf
+  echo -e "\ngreeter-setup-script=/usr/bin/synergyc $synergy_host" | sudo tee -a /etc/lightdm/lightdm.conf.d/70-linuxmint.conf
   echo ""
   echo ""
   
