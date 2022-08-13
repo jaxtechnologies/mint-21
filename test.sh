@@ -51,3 +51,11 @@ echo ""
 echo Getting current Sunset and Sunrise times...  Please be patient...
 sudo /usr/local/bin/sun-hours
 sleep 60
+
+
+clear
+echo ""
+echo "Setup Complete - Machine will reboot in 30 seconds"
+sleep 30
+
+sudo reboot
