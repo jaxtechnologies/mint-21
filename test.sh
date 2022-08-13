@@ -36,7 +36,8 @@ mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
 mv linuxmint.png ~/Pictures/
 mv .conkyrc ~
 mv StartupConky.desktop ~/.config/autostart/
-sudo mv sunset sunrise /usr/local/bin/
+sudo mv ~/Downloads/mint-setup/sunset /usr/local/bin/
+sudo mv ~/Downloads/mint-setup/sunrise /usr/local/bin/
 
 sudo mv sun-hours_etc_cron.daily /etc/cron.daily/sun-hours
 sudo chown root.root /etc/cron.daily/sun-hours
