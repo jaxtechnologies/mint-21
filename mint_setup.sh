@@ -1,5 +1,7 @@
 #!/bin/bash
 
+install_path=$(pwd)
+
 sudo sed -i 's/http:\/\/packages.linuxmint.com/https:\/\/mirror.cs.jmu.edu\/pub\/linuxmint\/packages/g' /etc/apt/sources.list.d/official-package-repositories.list
 
 sudo sed -i 's/http:\/\/archive.ubuntu.com\/ubuntu/http:\/\/mirror.clarkson.edu\/ubuntu/g' /etc/apt/sources.list.d/official-package-repositories.list
@@ -324,7 +326,7 @@ if [ "$REPLY" = "y" ]; then
   echo Setting up Synergy...  Please be patient...
   echo ""
   echo ""
-  sudo gdebi ~/Downloads/mint-setup/synergy_1.14.5-stable.a975f61a_ubuntu20_amd64.deb
+  sudo gdebi $install_path/synergy_1.14.5-stable.a975f61a_ubuntu20_amd64.deb
   echo -e "\ngreeter-setup-script=/usr/bin/synergyc $synergy_host" | sudo tee -a /etc/lightdm/lightdm.conf.d/70-linuxmint.conf
   echo ""
   echo ""
@@ -333,18 +335,16 @@ else
 	cancel
 fi
 
-cd ~/Downloads/mint-setup/
-mv 2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
-mv linuxmint.png ~/Pictures/
-mv .conkyrc ~
-mv StartupConky.desktop ~/.config/autostart/
-sudo mv sunset sunrise /usr/local/bin/
+mv $install_path/2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
+mv $install_path/linuxmint.png ~/Pictures/
+mv $install_path/.conkyrc ~
+mv $install_path/StartupConky.desktop ~/.config/autostart/
 
-sudo mv sun-hours_etc_cron.daily /etc/cron.daily/sun-hours
+sudo mv $install_path/sun-hours_etc_cron.daily /etc/cron.daily/sun-hours
 sudo chown root.root /etc/cron.daily/sun-hours
 sudo chmod 755 /etc/cron.daily/sun-hours
 
-sudo mv sun-hours_usr_local_bin /usr/local/bin/sun-hours
+sudo mv $install_path/sun-hours_usr_local_bin /usr/local/bin/sun-hours
 sudo chown root.root /usr/local/bin/sun-hours
 sudo chmod 755 /usr/local/bin/sun-hours
 
