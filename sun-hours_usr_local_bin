@@ -17,5 +17,5 @@ sunrise=$(date --date="$SUNR" +%r)
 sunset=$(date --date="$SUNS" +%r)
 
 # Use $sunrise and $sunset variables to fit your needs. Example:
-echo "$sunrise" > sunrise
-echo "$sunset" > sunset
+echo "$sunrise" > /usr/local/bin/sunrise
+echo "$sunset" > /usr/local/bin/sunset
