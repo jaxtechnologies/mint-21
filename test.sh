@@ -12,7 +12,7 @@ select opt in vm e6530 macpro quit; do
       mv $install_path/.conkyrc_e6530 ~/.conkrc
       ;;
     macpro)
-      mv $install_path/.conkyrc_macpro ~/.conkrc   
+      mv $install_path/.conkyrc_e6530 ~/.conkrc   
       ;;
     quit)
       break
