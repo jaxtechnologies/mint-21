@@ -337,8 +337,6 @@ fi
 
 PS3="Select the conky file to use: "
 
-install_path=$(pwd)
-
 clear
 echo ""
 echo ""
