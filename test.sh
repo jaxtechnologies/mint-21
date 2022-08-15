@@ -2,6 +2,10 @@ PS3="Select the conky file to use: "
 
 install_path=$(pwd)
 
+clear
+echo ""
+echo ""
+
 select opt in vm e6530 macpro quit; do
 
   case $opt in
