@@ -335,9 +335,40 @@ else
 	cancel
 fi
 
+PS3="Select the conky file to use: "
+
+install_path=$(pwd)
+
+clear
+echo ""
+echo ""
+
+select opt in vm e6530 macpro quit; do
+
+  case $opt in
+    vm)
+      cp $install_path/.conkyrc_vm ~/.conkyrc
+      break
+      ;;
+    e6530)
+      cp $install_path/.conkyrc_e6530 ~/.conkyrc
+      break
+      ;;
+    macpro)
+      cp $install_path/.conkyrc_macpro ~/.conkyrc
+      break
+      ;;
+    quit)
+      break
+      ;;
+    *)
+      echo "Invalid option $REPLY"
+      ;;
+  esac
+done
+
 mv $install_path/2.json ~/.cinnamon/configs/grouped-window-list@cinnamon.org/
 mv $install_path/linuxmint.png ~/Pictures/
-mv $install_path/.conkyrc ~
 mv $install_path/StartupConky.desktop ~/.config/autostart/
 
 sudo mv $install_path/sun-hours_etc_cron.daily /etc/cron.daily/sun-hours
