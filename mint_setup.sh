@@ -1,5 +1,9 @@
 #!/bin/bash
 
+### TODO
+### Prompt to reboot Y/N
+### Redshift Startup
+
 install_path=$(pwd)
 
 sudo sed -i 's/http:\/\/packages.linuxmint.com/https:\/\/mirror.cs.jmu.edu\/pub\/linuxmint\/packages/g' /etc/apt/sources.list.d/official-package-repositories.list
