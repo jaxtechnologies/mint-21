@@ -324,7 +324,7 @@ fi
 
 clear
 echo ""
-read -p "Does this machine need Synergy setup to connect to Synergy Server...  Say NO for the SYNERGY SERVER & VM INSTALLS... (y/n)? "
+read -p "Does this machine need Synergy setup to connect to Synergy Server...  Say NO on SYNERGY SERVER CONTROLLER & VM INSTALLS... (y/n)? "
 if [ "$REPLY" = "y" ]; then
 	
   echo ""
@@ -418,7 +418,13 @@ fi
 
 clear
 echo ""
-echo "Setup Complete - Machine will reboot in 30 seconds"
-sleep 30
+read -p "Setup is Complete - Reboot the Machine NOW (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+  sudo reboot
+  
+else
+	cancel
+fi
 
-sudo reboot
+exit
