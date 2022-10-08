@@ -324,7 +324,7 @@ fi
 
 clear
 echo ""
-read -p "Does this machine need Synergy setup to connect to Synergy Server...  Say NO for Virtual Machine setup... (y/n)? "
+read -p "Does this machine need Synergy setup to connect to Synergy Server...  Say NO for the SYNERGY SERVER & VM INSTALLS... (y/n)? "
 if [ "$REPLY" = "y" ]; then
 	
   echo ""
