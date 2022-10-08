@@ -293,19 +293,27 @@ sudo adduser xrdp ssl-cert
 
 clear
 echo ""
-echo Modifying Grub Menu to not display...  Please be patient...
-echo ""
-echo ""
-sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=0/g' /etc/default/grub
-sudo update-grub
+read -p "Is this a Dual Boot Machine where the Grub Menu is needed to control the OS... (y/n)? "
+if [ "$REPLY" = "n" ]; then
+
+  echo ""
+  echo Modifying Grub Menu to not display...  Please be patient...
+  echo ""
+  echo ""
+  sudo sed -i 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=0/g' /etc/default/grub
+  sudo update-grub
+
+else
+	cancel
+fi
 
 clear
 echo ""
 read -p "Is this a Dell Latitude E6530 that requires NVidia 340 Drivers... (y/n)? "
 if [ "$REPLY" = "y" ]; then
 	
-	echo ""
-	echo "Installing NVidia-340 Drivers...  Please be patient..."
+  echo ""
+  echo "Installing NVidia-340 Drivers...  Please be patient..."
   echo ""
   echo ""
   sudo apt-get install nvidia-340 -y
