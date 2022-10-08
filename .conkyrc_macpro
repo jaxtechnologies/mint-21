@@ -67,6 +67,10 @@ ${color}${goto 13}Core 5 ${color2}@ ${goto 77}${color green}${freq 5}MHz ${goto 
 ${color}${goto 13}Core 6 ${color2}@ ${goto 77}${color green}${freq 6}MHz ${goto 165}${color green}${cpu cpu6}% ${goto 200}${color3}${cpubar cpu6 12}
 ${color}${goto 13}Core 7 ${color2}@ ${goto 77}${color green}${freq 7}MHz ${goto 165}${color green}${cpu cpu7}% ${goto 200}${color3}${cpubar cpu7 12}
 ${color}${goto 13}Core 8 ${color2}@ ${goto 77}${color green}${freq 8}MHz ${goto 165}${color green}${cpu cpu8}% ${goto 200}${color3}${cpubar cpu8 12}
+${color}${goto 13}Core 9 ${color2}@ ${goto 77}${color green}${freq 9}MHz ${goto 165}${color green}${cpu cpu9}% ${goto 200}${color3}${cpubar cpu9 12}
+${color}${goto 13}Core 10 ${color2}@ ${goto 77}${color green}${freq 10}MHz ${goto 165}${color green}${cpu cpu10}% ${goto 200}${color3}${cpubar cpu10 12}
+${color}${goto 13}Core 11 ${color2}@ ${goto 77}${color green}${freq 11}MHz ${goto 165}${color green}${cpu cpu11}% ${goto 200}${color3}${cpubar cpu11 12}
+${color}${goto 13}Core 12 ${color2}@ ${goto 77}${color green}${freq 12}MHz ${goto 165}${color green}${cpu cpu12}% ${goto 200}${color3}${cpubar cpu12 12}
 ${color1}CPU Avg: ${goto 77}${color green}${cpu cpu0}% ${goto 110}${color3}${cpubar cpu0 12}
 ${color3}${cpugraph cpu0 12,380 0000ff ff0000}
 ${color1}Load Avg: (1-5-15 minutes) ${alignr}${color green} $loadavg
@@ -90,12 +94,12 @@ ${color1}${voffset 5}Processes: ${goto 210}Running:${color green} $running_proce
 
 #NETWORK
 ${color orange}${voffset 2}NETWORK  ${hr 2}
-${color1}IP on wlp3s0 $alignr ${color green}${addr wlp3s0}
+${color1}IP on wls5 $alignr ${color green}${addr wls5}
 
 ${color1}Network stats using vnStat "-i", "-w" and "-m"
 ${color}${goto 5}Today ${goto 100}Yesterday ${goto 225}Week ${goto 325}Month ${color green}
-${execi 10 vnstat -i wlp3s0 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}'} ${goto 110}${execi 10 vnstat -i wlp3s0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}'} ${goto 220}${execi 10 vnstat -i wlp3s0 -w | grep "current week" | awk '{print $9" "substr ($10, 1, 1)}'} ${goto 315}${execi 10 vnstat -i wlp3s0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}'}
+${execi 10 vnstat -i wls5 | grep "today" | awk '{print $8" "substr ($9, 1, 1)}'} ${goto 110}${execi 10 vnstat -i wls5 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}'} ${goto 220}${execi 10 vnstat -i wls5 -w | grep "current week" | awk '{print $9" "substr ($10, 1, 1)}'} ${goto 315}${execi 10 vnstat -i wls5 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}'}
 
-${color1}Down: ${color green}${goto 50}${downspeed wlp3s0} ${goto 100}/ ${goto 120}${totaldown wlp3s0} ${color1}${goto 200}Up: ${color green}${goto 250}${upspeed wlp3s0} ${goto 300}/ ${goto 320}${totalup wlp3s0}
-${color red}${downspeedgraph wlp3s0 20,190 000000 ff0000} ${alignr}${color green}${upspeedgraph wlp3s0 20,190 000000 00ff00}
+${color1}Down: ${color green}${goto 50}${downspeed wls5} ${goto 100}/ ${goto 120}${totaldown wls5} ${color1}${goto 200}Up: ${color green}${goto 250}${upspeed wls5} ${goto 300}/ ${goto 320}${totalup wls5}
+${color red}${downspeedgraph wls5 20,190 000000 ff0000} ${alignr}${color green}${upspeedgraph wls5 20,190 000000 00ff00}
 ]]
