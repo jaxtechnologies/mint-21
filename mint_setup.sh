@@ -14,7 +14,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 #TOTAL APPS BEING ADDED TO INSTALLATION
-total=37
+total=36
 
 clear
 echo ""
@@ -32,10 +32,10 @@ sudo apt-get install vim -y
 
 clear
 echo ""
-echo Installing 3/$total chromium-browser...  Please be patient...
+echo Installing 3/$total falkon...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install chromium-browser -y
+sudo apt-get install falkon -y
 
 clear
 echo ""
@@ -269,14 +269,7 @@ sudo apt-get install virtualbox-guest-additions-iso -y
 
 clear
 echo ""
-echo Installing 35/$total falkon...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install falkon -y
-
-clear
-echo ""
-echo Installing 36/$total openoffice.org-hyphenation...  Please be patient...
+echo Installing 35/$total openoffice.org-hyphenation...  Please be patient...
 echo ""
 echo ""
 #Fixes the Local Language Packs message after Initial Installation
@@ -284,7 +277,7 @@ sudo apt-get install openoffice.org-hyphenation -y
 
 clear
 echo ""
-echo Installing 37/$total xrdp...  Please be patient...
+echo Installing 36/$total xrdp...  Please be patient...
 echo ""
 echo ""
 #Allows RDP Connections to Linux
