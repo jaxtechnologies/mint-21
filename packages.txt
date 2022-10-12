@@ -1,36 +1,36 @@
-sudo apt install openssh-server -y
-sudo apt install vim -y
-sudo apt install dos2unix -y
-sudo apt install gtkhash -y
-sudo apt install remmina -y
-sudo apt install notepadqq -y
-sudo apt install keepass2 -y
-sudo apt install gftp -y
-sudo apt install pdfshuffler -y
-sudo apt install okular -y
-sudo apt install handbrake -y
-sudo apt install cheese -y
-sudo apt install guvcview -y
-sudo apt install scribus -y
-sudo apt install scribus-template -y
-sudo apt install krita -y
-sudo apt install virtualbox -y
-sudo apt install virtualbox-ext-pack -y
-sudo apt install virtualbox-guest-additions-iso -y
-sudo apt install kleopatra -y
-sudo apt install conky-all -y
-sudo apt install vnstat -y
-sudo apt install psensor -y
-sudo apt install tree -y
-sudo apt install cmatrix -y
-sudo apt install steam -y
-sudo apt install pingus -y
-sudo apt install frozen-bubble -y
-sudo apt install python3-pip -y
-sudo apt install python3-tk -y
-sudo apt install tk -y
-sudo apt install docker.io -y
-sudo apt install sqlitebrowser -y
-sudo apt install openoffice.org-hyphenation -y
-sudo apt install xrdp -y
-sudo apt install falkon -y
+sudo apt install openssh-server
+sudo apt install vim
+sudo apt install dos2unix
+sudo apt install gtkhash
+sudo apt install remmina
+sudo apt install notepadqq
+sudo apt install keepass2
+sudo apt install gftp
+sudo apt install pdfshuffler
+sudo apt install okular
+sudo apt install handbrake
+sudo apt install cheese
+sudo apt install guvcview
+sudo apt install scribus
+sudo apt install scribus-template
+sudo apt install krita
+sudo apt install virtualbox
+sudo apt install virtualbox-ext-pack
+sudo apt install virtualbox-guest-additions-iso
+sudo apt install kleopatra
+sudo apt install conky-all
+sudo apt install vnstat
+sudo apt install psensor
+sudo apt install tree
+sudo apt install cmatrix
+sudo apt install steam
+sudo apt install pingus
+sudo apt install frozen-bubble
+sudo apt install python3-pip
+sudo apt install python3-tk
+sudo apt install tk
+sudo apt install docker.io
+sudo apt install sqlitebrowser
+sudo apt install openoffice.org-hyphenation
+sudo apt install xrdp
+sudo apt install falkon
