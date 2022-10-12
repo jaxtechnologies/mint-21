@@ -74,11 +74,11 @@ sudo apt-get install gftp -y
 
 clear
 echo ""
-echo Installing 9/$total pdfshuffler...  Please be patient...
+echo Installing 9/$total pdfarranger...  Please be patient...
 echo ""
 echo ""
 #Merge or Split PDF Documents
-sudo apt-get install pdfshuffler -y
+sudo apt-get install pdfarranger -y
 
 clear
 echo ""
