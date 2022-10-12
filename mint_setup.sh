@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ### TODO
-### Prompt to reboot Y/N
 ### Redshift Startup
 
 install_path=$(pwd)
