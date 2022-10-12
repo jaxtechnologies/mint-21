@@ -32,10 +32,10 @@ sudo apt-get install vim -y
 
 clear
 echo ""
-echo Installing 3/$total falkon...  Please be patient...
+echo Installing 3/$total dos2unix...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install falkon -y
+sudo apt-get install dos2unix -y
 
 clear
 echo ""
@@ -54,124 +54,28 @@ sudo apt-get install remmina -y
 
 clear
 echo ""
-echo Installing 6/$total remmina-plugin-rdp...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install remmina-plugin-rdp -y
-
-clear
-echo ""
-echo Installing 7/$total remmina-plugin-vnc...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install remmina-plugin-vnc -y
-
-clear
-echo ""
-echo Installing 8/$total scribus...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install scribus -y
-
-clear
-echo ""
-echo Installing 9/$total scribus-template...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install scribus-template -y
-
-clear
-echo ""
-echo Installing 10/$total notepadqq...  Please be patient...
+echo Installing 6/$total notepadqq...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install notepadqq -y
 
 clear
 echo ""
-echo Installing 11/$total dos2unix...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install dos2unix -y
-
-clear
-echo ""
-echo Installing 12/$total keepass2...  Please be patient...
+echo Installing 7/$total keepass2...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install keepass2 -y
 
 clear
 echo ""
-echo Installing 13/$total conky-all...  Please be patient...
+echo Installing 8/$total gftp...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install conky-all -y
+sudo apt-get install gftp -y
 
 clear
 echo ""
-echo Installing 14/$total vnstat...  Please be patient...
-echo ""
-echo ""
-#required by conky network statistics section
-sudo apt-get install vnstat -y
-
-clear
-echo ""
-echo Installing 15/$total psensor...  Please be patient...
-echo ""
-echo ""
-#graphical sensor monitor
-sudo apt-get install psensor -y
-
-clear
-echo ""
-echo Installing 16/$total tree...  Please be patient...
-echo ""
-echo ""
-#helps determine system monitors for conky
-sudo apt-get install tree -y
-
-clear
-echo ""
-echo Installing 17/$total python-pip...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install python-pip -y
-
-clear
-echo ""
-echo Installing 18/$total python3-tk...  Please be patient...
-echo ""
-echo ""
-#test ‘python3’ tkinkter app before install
-sudo apt-get install python3-tk -y
-
-clear
-echo ""
-echo Installing 19/$total tk...  Please be patient...
-echo ""
-echo ""
-#test ‘python3’ tkinkter app before install
-sudo apt-get install tk -y
-
-clear
-echo ""
-echo Installing 20/$total docker.io...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install docker.io -y
-
-clear
-echo ""
-echo Installing 21/$total sqlitebrowser...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install sqlitebrowser -y
-
-clear
-echo ""
-echo Installing 22/$total pdfshuffler...  Please be patient...
+echo Installing 9/$total pdfshuffler...  Please be patient...
 echo ""
 echo ""
 #Merge or Split PDF Documents
@@ -179,7 +83,7 @@ sudo apt-get install pdfshuffler -y
 
 clear
 echo ""
-echo Installing 23/$total okular...  Please be patient...
+echo Installing 10/$total okular...  Please be patient...
 echo ""
 echo ""
 #Document Reader - PDF’s, etc
@@ -187,17 +91,115 @@ sudo apt-get install okular -y
 
 clear
 echo ""
-echo Installing 24/$total kleopatra...  Please be patient...
+echo Installing 11/$total handbrake...  Please be patient...
+echo ""
+echo ""
+sudo apt-get install handbrake -y
+
+clear
+echo ""
+echo Installing 12/$total cheese...  Please be patient...
+echo ""
+echo ""
+#Camera Software
+sudo apt-get install cheese -y
+
+clear
+echo ""
+echo Installing 13/$total guvcview...  Please be patient...
+echo ""
+echo ""
+#Camera Software
+sudo apt-get install guvcview -y
+
+clear
+echo ""
+echo Installing 14/$total scribus...  Please be patient...
+echo ""
+echo ""
+sudo apt-get install scribus -y
+
+clear
+echo ""
+echo Installing 15/$total scribus-template...  Please be patient...
+echo ""
+echo ""
+sudo apt-get install scribus-template -y
+
+clear
+echo ""
+echo Installing 16/$total krita...  Please be patient...
+echo ""
+echo ""
+#Professional Paint Program
+sudo apt-get install krita -y
+
+clear
+echo ""
+echo Installing 17/$total virtualbox...  Please be patient...
+echo ""
+echo ""
+sudo apt-get install virtualbox -y
+
+clear
+echo ""
+echo Installing 18/$total virtualbox-ext-pack...  Please be patient...
+echo ""
+echo ""
+sudo apt-get install virtualbox-ext-pack -y
+
+clear
+echo ""
+echo Installing 19/$total virtualbox-guest-additions-iso...  Please be patient...
+echo ""
+echo ""
+sudo apt-get install virtualbox-guest-additions-iso -y
+
+clear
+echo ""
+echo Installing 20/$total kleopatra...  Please be patient...
 echo ""
 echo ""
 sudo apt-get install kleopatra -y
 
 clear
 echo ""
-echo Installing 25/$total mysql-workbench...  Please be patient...
+echo Installing 21/$total conky-all...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install mysql-workbench -y
+sudo apt-get install conky-all -y
+
+clear
+echo ""
+echo Installing 22/$total vnstat...  Please be patient...
+echo ""
+echo ""
+#required by conky network statistics section
+sudo apt-get install vnstat -y
+
+clear
+echo ""
+echo Installing 23/$total psensor...  Please be patient...
+echo ""
+echo ""
+#graphical sensor monitor
+sudo apt-get install psensor -y
+
+clear
+echo ""
+echo Installing 24/$total tree...  Please be patient...
+echo ""
+echo ""
+#helps determine system monitors for conky
+sudo apt-get install tree -y
+
+clear
+echo ""
+echo Installing 25/$total cmatrix...  Please be patient...
+echo ""
+echo ""
+#cmatrix turns terminal into matrix terminal
+sudo apt-get install cmatrix -y
 
 clear
 echo ""
@@ -209,67 +211,60 @@ sudo apt-get install steam -y
 
 clear
 echo ""
-echo Installing 27/$total cmatrix...  Please be patient...
+echo Installing 27/$total pingus...  Please be patient...
 echo ""
 echo ""
-#cmatrix turns terminal into matrix terminal
-sudo apt-get install cmatrix -y
+#Pingus Game
+sudo apt-get install pingus -y
 
 clear
 echo ""
-echo Installing 28/$total krita...  Please be patient...
+echo Installing 28/$total frozen-bubble...  Please be patient...
 echo ""
 echo ""
-#Professional Paint Program
-sudo apt-get install krita -y
+#Frozen Bubble Game
+sudo apt-get install frozen-bubble -y
 
 clear
 echo ""
-echo Installing 29/$total cheese...  Please be patient...
+echo Installing 29/$total python3-pip...  Please be patient...
 echo ""
 echo ""
-#Camera Software
-sudo apt-get install cheese -y
+sudo apt-get install python3-pip -y
 
 clear
 echo ""
-echo Installing 30/$total guvcview...  Please be patient...
+echo Installing 30/$total python3-tk...  Please be patient...
 echo ""
 echo ""
-#Camera Software
-sudo apt-get install guvcview -y
+#test ‘python3’ tkinkter app before install
+sudo apt-get install python3-tk -y
 
 clear
 echo ""
-echo Installing 31/$total gftp...  Please be patient...
+echo Installing 31/$total tk...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install gftp -y
+#test ‘python3’ tkinkter app before install
+sudo apt-get install tk -y
 
 clear
 echo ""
-echo Installing 32/$total handbrake...  Please be patient...
+echo Installing 32/$total docker.io...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install handbrake -y
+sudo apt-get install docker.io -y
 
 clear
 echo ""
-echo Installing 33/$total virtualbox...  Please be patient...
+echo Installing 33/$total sqlitebrowser...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install virtualbox -y
+sudo apt-get install sqlitebrowser -y
 
 clear
 echo ""
-echo Installing 34/$total virtualbox-guest-additions-iso...  Please be patient...
-echo ""
-echo ""
-sudo apt-get install virtualbox-guest-additions-iso -y
-
-clear
-echo ""
-echo Installing 35/$total openoffice.org-hyphenation...  Please be patient...
+echo Installing 34/$total openoffice.org-hyphenation...  Please be patient...
 echo ""
 echo ""
 #Fixes the Local Language Packs message after Initial Installation
@@ -277,12 +272,20 @@ sudo apt-get install openoffice.org-hyphenation -y
 
 clear
 echo ""
-echo Installing 36/$total xrdp...  Please be patient...
+echo Installing 35/$total xrdp...  Please be patient...
 echo ""
 echo ""
 #Allows RDP Connections to Linux
 sudo apt-get install xrdp -y
 sudo adduser xrdp ssl-cert
+
+clear
+echo ""
+echo Installing 36/$total falkon...  Please be patient...
+echo ""
+echo ""
+sudo apt-get install falkon -y
+
 
 clear
 echo ""
