@@ -14,7 +14,7 @@ sudo apt install keepass2
 sleep 5 && clear
 sudo apt install gftp
 sleep 5 && clear
-sudo apt install pdfshuffler
+sudo apt install pdfarranger
 sleep 5 && clear
 sudo apt install okular
 sleep 5 && clear
