@@ -417,7 +417,7 @@ if [ "$REPLY" = "y" ]; then
   echo "Downloading and installing Sublime-Text...  Please be patient..."
   echo ""
   echo ""
-  sudo apt install sublime-text
+  sudo apt install sublime-text -y
 
 else
 	cancel
