@@ -9,8 +9,8 @@ sudo sed -i 's/http:\/\/packages.linuxmint.com/https:\/\/mirror.cs.jmu.edu\/pub\
 
 sudo sed -i 's/http:\/\/archive.ubuntu.com\/ubuntu/http:\/\/mirror.clarkson.edu\/ubuntu/g' /etc/apt/sources.list.d/official-package-repositories.list
 
-sudo apt-get update
-sudo apt-get upgrade -y
+sudo apt update
+sudo apt upgrade -y
 
 #TOTAL APPS BEING ADDED TO INSTALLATION
 total=36
@@ -20,28 +20,28 @@ echo ""
 echo Installing 1/$total openssh-server...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install openssh-server -y
+sudo apt install openssh-server -y
 
 clear
 echo ""
 echo Installing 2/$total vim...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install vim -y
+sudo apt install vim -y
 
 clear
 echo ""
 echo Installing 3/$total dos2unix...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install dos2unix -y
+sudo apt install dos2unix -y
 
 clear
 echo ""
 echo Installing 4/$total gtkhash...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install gtkhash -y
+sudo apt install gtkhash -y
 
 clear
 echo ""
@@ -49,28 +49,28 @@ echo Installing 5/$total remmina...  Please be patient...
 echo ""
 echo ""
 #use for SSH and RDP connections
-sudo apt-get install remmina -y
+sudo apt install remmina -y
 
 clear
 echo ""
 echo Installing 6/$total notepadqq...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install notepadqq -y
+sudo apt install notepadqq -y
 
 clear
 echo ""
 echo Installing 7/$total keepass2...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install keepass2 -y
+sudo apt install keepass2 -y
 
 clear
 echo ""
 echo Installing 8/$total gftp...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install gftp -y
+sudo apt install gftp -y
 
 clear
 echo ""
@@ -78,7 +78,7 @@ echo Installing 9/$total pdfarranger...  Please be patient...
 echo ""
 echo ""
 #Merge or Split PDF Documents
-sudo apt-get install pdfarranger -y
+sudo apt install pdfarranger -y
 
 clear
 echo ""
@@ -86,14 +86,14 @@ echo Installing 10/$total okular...  Please be patient...
 echo ""
 echo ""
 #Document Reader - PDF’s, etc
-sudo apt-get install okular -y
+sudo apt install okular -y
 
 clear
 echo ""
 echo Installing 11/$total handbrake...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install handbrake -y
+sudo apt install handbrake -y
 
 clear
 echo ""
@@ -101,7 +101,7 @@ echo Installing 12/$total cheese...  Please be patient...
 echo ""
 echo ""
 #Camera Software
-sudo apt-get install cheese -y
+sudo apt install cheese -y
 
 clear
 echo ""
@@ -109,21 +109,21 @@ echo Installing 13/$total guvcview...  Please be patient...
 echo ""
 echo ""
 #Camera Software
-sudo apt-get install guvcview -y
+sudo apt install guvcview -y
 
 clear
 echo ""
 echo Installing 14/$total scribus...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install scribus -y
+sudo apt install scribus -y
 
 clear
 echo ""
 echo Installing 15/$total scribus-template...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install scribus-template -y
+sudo apt install scribus-template -y
 
 clear
 echo ""
@@ -131,42 +131,42 @@ echo Installing 16/$total krita...  Please be patient...
 echo ""
 echo ""
 #Professional Paint Program
-sudo apt-get install krita -y
+sudo apt install krita -y
 
 clear
 echo ""
 echo Installing 17/$total virtualbox...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install virtualbox -y
+sudo apt install virtualbox -y
 
 clear
 echo ""
 echo Installing 18/$total virtualbox-ext-pack...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install virtualbox-ext-pack -y
+sudo apt install virtualbox-ext-pack -y
 
 clear
 echo ""
 echo Installing 19/$total virtualbox-guest-additions-iso...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install virtualbox-guest-additions-iso -y
+sudo apt install virtualbox-guest-additions-iso -y
 
 clear
 echo ""
 echo Installing 20/$total kleopatra...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install kleopatra -y
+sudo apt install kleopatra -y
 
 clear
 echo ""
 echo Installing 21/$total conky-all...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install conky-all -y
+sudo apt install conky-all -y
 
 clear
 echo ""
@@ -174,7 +174,7 @@ echo Installing 22/$total vnstat...  Please be patient...
 echo ""
 echo ""
 #required by conky network statistics section
-sudo apt-get install vnstat -y
+sudo apt install vnstat -y
 
 clear
 echo ""
@@ -182,7 +182,7 @@ echo Installing 23/$total psensor...  Please be patient...
 echo ""
 echo ""
 #graphical sensor monitor
-sudo apt-get install psensor -y
+sudo apt install psensor -y
 
 clear
 echo ""
@@ -190,7 +190,7 @@ echo Installing 24/$total tree...  Please be patient...
 echo ""
 echo ""
 #helps determine system monitors for conky
-sudo apt-get install tree -y
+sudo apt install tree -y
 
 clear
 echo ""
@@ -198,7 +198,7 @@ echo Installing 25/$total cmatrix...  Please be patient...
 echo ""
 echo ""
 #cmatrix turns terminal into matrix terminal
-sudo apt-get install cmatrix -y
+sudo apt install cmatrix -y
 
 clear
 echo ""
@@ -206,7 +206,7 @@ echo Installing 26/$total steam...  Please be patient...
 echo ""
 echo ""
 #Steam Gaming
-sudo apt-get install steam -y
+sudo apt install steam -y
 
 clear
 echo ""
@@ -214,7 +214,7 @@ echo Installing 27/$total pingus...  Please be patient...
 echo ""
 echo ""
 #Pingus Game
-sudo apt-get install pingus -y
+sudo apt install pingus -y
 
 clear
 echo ""
@@ -222,14 +222,14 @@ echo Installing 28/$total frozen-bubble...  Please be patient...
 echo ""
 echo ""
 #Frozen Bubble Game
-sudo apt-get install frozen-bubble -y
+sudo apt install frozen-bubble -y
 
 clear
 echo ""
 echo Installing 29/$total python3-pip...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install python3-pip -y
+sudo apt install python3-pip -y
 
 clear
 echo ""
@@ -237,7 +237,7 @@ echo Installing 30/$total python3-tk...  Please be patient...
 echo ""
 echo ""
 #test ‘python3’ tkinkter app before install
-sudo apt-get install python3-tk -y
+sudo apt install python3-tk -y
 
 clear
 echo ""
@@ -245,21 +245,21 @@ echo Installing 31/$total tk...  Please be patient...
 echo ""
 echo ""
 #test ‘python3’ tkinkter app before install
-sudo apt-get install tk -y
+sudo apt install tk -y
 
 clear
 echo ""
 echo Installing 32/$total docker.io...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install docker.io -y
+sudo apt install docker.io -y
 
 clear
 echo ""
 echo Installing 33/$total sqlitebrowser...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install sqlitebrowser -y
+sudo apt install sqlitebrowser -y
 
 clear
 echo ""
@@ -267,7 +267,7 @@ echo Installing 34/$total openoffice.org-hyphenation...  Please be patient...
 echo ""
 echo ""
 #Fixes the Local Language Packs message after Initial Installation
-sudo apt-get install openoffice.org-hyphenation -y
+sudo apt install openoffice.org-hyphenation -y
 
 clear
 echo ""
@@ -275,7 +275,7 @@ echo Installing 35/$total xrdp...  Please be patient...
 echo ""
 echo ""
 #Allows RDP Connections to Linux
-sudo apt-get install xrdp -y
+sudo apt install xrdp -y
 sudo adduser xrdp ssl-cert
 
 clear
@@ -283,7 +283,7 @@ echo ""
 echo Installing 36/$total falkon...  Please be patient...
 echo ""
 echo ""
-sudo apt-get install falkon -y
+sudo apt install falkon -y
 
 
 clear
@@ -311,7 +311,7 @@ if [ "$REPLY" = "y" ]; then
   echo "Installing NVidia-340 Drivers...  Please be patient..."
   echo ""
   echo ""
-  sudo apt-get install nvidia-340 -y
+  sudo apt install nvidia-340 -y
 
 else
 	cancel
@@ -391,6 +391,38 @@ sudo /usr/local/bin/sun-hours
 sleep 10
 
 gsettings set org.cinnamon.desktop.background picture-uri 'file:///usr/share/backgrounds/linuxmint/ktee_linuxmint.png'
+
+clear
+echo ""
+read -p "Do you want to download and install the latest version of Chrome Browser... (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+  echo ""
+  echo "Downloading and installing Chrome Browser...  Please be patient..."
+  echo ""
+  echo ""
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+else
+	cancel
+fi
+
+clear
+echo ""
+read -p "Do you want to install Sublime-Text... (y/n)? "
+if [ "$REPLY" = "y" ]; then
+	
+  echo ""
+  echo "Downloading and installing Sublime-Text...  Please be patient..."
+  echo ""
+  echo ""
+  sudo apt install sublime-text
+
+else
+	cancel
+fi
+
 
 clear
 echo ""
