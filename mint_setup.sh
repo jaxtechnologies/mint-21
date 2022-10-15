@@ -333,7 +333,7 @@ if [ "$REPLY" = "y" ]; then
   echo Setting up Synergy...  Please be patient...
   echo ""
   echo ""
-  sudo gdebi $install_path/synergy_1.14.5-stable.a975f61a_ubuntu20_amd64.deb
+  sudo gdebi $install_path/synergy_1.14.5-stable.1b7140f2_ubuntu22_amd64.deb
   echo -e "\ngreeter-setup-script=/usr/bin/synergyc $synergy_host" | sudo tee -a /etc/lightdm/lightdm.conf.d/70-linuxmint.conf
   echo ""
   echo ""
