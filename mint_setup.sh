@@ -390,9 +390,6 @@ echo Getting current Sunset and Sunrise times...  Please be patient...
 sudo /usr/local/bin/sun-hours
 sleep 10
 
-#Testing to see if this step is needed since we are rebooting and if will fix sunrise-sunset issue not running...
-#sudo /etc/init.d/cron restart
-
 gsettings set org.cinnamon.desktop.background picture-uri 'file:///usr/share/backgrounds/linuxmint/ktee_linuxmint.png'
 
 clear
