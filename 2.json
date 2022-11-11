@@ -164,6 +164,7 @@
         ],
         "value": [
             "org.gnome.Terminal.desktop",
+            "firefox.desktop",
             "nemo.desktop",
             "keepass2.desktop",
             "org.gnome.Screenshot.desktop",
