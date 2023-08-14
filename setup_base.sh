@@ -50,7 +50,6 @@ sudo apt upgrade -y
 sudo apt install openssh-server -y
 sudo apt install vim -y
 sudo apt install dos2unix -y
-sudo apt install docker.io -y
 sudo apt install xrdp -y		#Allows RDP Connections to Linux
 sudo adduser xrdp ssl-cert
 
